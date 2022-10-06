@@ -1,0 +1,176 @@
+@import "./classes";
+@import "./variables";
+//! ------------------- Start portfolio Style -------------------
+#portfolio
+{
+    // background-color: royalblue;
+    .works
+    {
+        // background-color: tomato;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .work
+        {
+            position: relative;
+            width: 33.333%;
+            height: 350px;
+            background-size: cover;
+            transition: ease-in-out 5s background-position;
+            background-size: cover;
+            transition-delay: 0.3s;
+            a
+            {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            .work-layout
+            {
+                background-color: rgba($color: black, $alpha: 0.85);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transition: 0.5s;
+                transition-delay: 0.2s;
+                overflow: hidden;
+                span
+                {
+                    color: white;
+                    transition: 0.7s;
+                    margin-bottom: 5px;
+                    position: relative;
+                }
+                h4
+                {
+                    color: $mainColor;
+                    transition: 0.7s;
+                    position: relative;
+                }
+            }
+            &:hover
+            {
+                background-position: bottom;
+                .work-layout
+                {
+                    opacity: 0;
+                    visibility: hidden;
+                    span
+                    {
+                        transform: translateX(150px);
+                    }
+                    h4
+                    {
+                        transform: translateX(-150px);
+                        
+                    }
+                }
+            }
+        }
+        .work.work1
+        {
+            background-image: url("../assets/images/1.webp");
+        }
+        .work.work2
+        {
+            background-image: url("../assets/images/2.webp");
+        }
+        .work.work3
+        {
+            background-image: url("../assets/images/3.webp");
+        }
+        .work.work4
+        {
+            background-image: url("../assets/images/4.webp");
+        }
+        .work.work5
+        {
+            background-image: url("../assets/images/5.webp");
+        }
+        .work.work6
+        {
+            background-image: url("../assets/images/6.webp");
+        }
+
+    }
+    .resume
+    {
+        .resume-info
+        {
+            padding: 10px 0;
+            .res
+            {
+                margin-bottom: 18px;
+                h5
+                {
+                    text-transform: uppercase;
+                    color: white;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    i
+                    {
+                        color: $mainColor;
+                        margin-right: 5px;
+                    }
+                }
+                .res-item
+                {
+                    background-color: $secBg;
+                    padding: 20px;
+                    border-radius: 5px;
+                    margin-bottom: 18px;
+                    color: white;
+                    span
+                    {
+                        font: {
+                            size: 15px;
+                            weight: 600;
+                        };
+                        margin-bottom: 5px;
+                    }
+                    h4
+                    {
+                        color: $mainColor;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+//! ------------------- End portfolio Style -------------------
+//? ------------------- Start portfolio Responsive -------------------
+@media screen and (max-width: 991px) {
+
+    #portfolio
+    {
+        .works
+        {
+            .work
+            {
+                width: 50%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+
+    #portfolio
+    {
+        .works
+        {
+            .work
+            {
+                width: 100%;
+            }
+        }
+    }
+}
+//? ------------------- End portfolio Responsive -------------------

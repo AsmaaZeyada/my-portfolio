@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS - Portfolio</title>
+    <!-- fonts style sheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootstrap style sheet -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- slick slider style sheet -->
+    <link rel="stylesheet" href="CSS/slick.css">
+    <link rel="stylesheet" href="CSS/slick-theme.css">
+    <!-- fontawsome style sheet -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#nav">
+
+    <!-------------------- start loading screen -------------------->
+    <div id="loading">
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+          </div>
+    </div>
+    <!-------------------- end loading screen -------------------->
+
+    <!-------------------- start navbar -------------------->
+    <nav id="nav" class="navbar navbar-expand-lg">
+        <div class="container">
+
+          <a class="navbar-brand" href="#">
+              <img src="./assets/images/logo.webp" alt="Ahmed Sherif Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars" id="navToggleIcon"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#expertiseArea">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-------------------- end navbar -------------------->
+
+    <!------------------- start header -------------------->
+    <header id="home" >
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="home-content">
+                        <h4><span class="line"></span> hello</h4>
+                        <h1>I'm Asmaa <span>Zeyada</span></h1>
+                        <span>I'm </span> <span id="typed" class=""></span>
+                        <a href="" download="Asmaa Zeyada CV.pdf" class="main-btn my-4">Download CV</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="home-layout">
+            Frontend<br>
+            Developer
+        </div>
+        <a class="home-link" href="#about">
+            <i class="fas fa-chevron-down slideInDown"></i>
+        </a>
+    </header>
+    <!-------------------- end header -------------------->
+
+    <!------------------- start about -------------------->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="about-img">
+                            <img src="./assets/images/about-photo.webp" alt="me" class=" img-fluid rounded-3 ">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="about-information">
+                            <h2 class="section-title"><span class="line"></span>About</h2>
+                            <p>
+                                I'm an Egyptian based in Alexandria, Egypt and I am working as a Frontend Developer, I use my knowledge of HTML, CSS, and JavaScript to build websites and web applications, which is responsive to different devices and in line with the latest design trends, I love to work with developers teams and share the experience with each other and do my job perfectly.
+                            </p>
+                            <h2 class="signature">Asmaa Zeyada</h2>
+                            <a href="#contact" class="main-btn">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-skills">
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <h2 class="section-title mb-3"><span class="line"></span>my Skills</h2>
+                    </div>
+                    <div class="col-md-8">
+                        <div id="skills">
+                            <div class="skill HTML">
+                                <div class="skill-info">
+                                    <span>HTML/HTML5 <i class="fab fa-html5"></i></span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-progressbar">
+                                    <div class="percentage HTML"></div>
+                                </div>
+                            </div>
+                            <div class="skill CSS">
+                                <div class="skill-info">
+                                    <span>CSS/CSS3 <i class="fab fa-css3-alt"></i></span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-progressbar">
+                                    <div class="percentage CSS"></div>
+                                </div>
+                            </div>
+                            <div class="skill SCSS">
+                                <div class="skill-info">
+                                    <span>SASS/SCSS <i class="fab fa-sass"></i></span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-progressbar">
+                                    <div class="percentage SCSS"></div>
+                                </div>
+                            </div>
+                            <div class="skill Bootstrap">
+                                <div class="skill-info">
+                                    <span>Bootstrap <i class="fab fa-bootstrap"></i></span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-progressbar">
+                                    <div class="percentage BS"></div>
+                                </div>
+                            </div>
+                            <div class="skill JS">
+                                <div class="skill-info">
+                                    <span>JavaScript/ES6 <i class="fab fa-js-square"></i></span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-progressbar">
+                                    <div class="percentage JS"></div>
+                                </div>
+                            </div>
+                            <div class="skill NG">
+                                <div class="skill-info">
+                                    <span>ANGULAR 2+ <i class="fab fa-angular"></i></span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-progressbar">
+                                    <div class="percentage NG"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------- end about -------------------->
+
+    <!------------------- start expertise area -------------------->
+    <section id="expertiseArea" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">expertise area</h2>
+            <p class="section-p">Here you will find all the techniques and services I offer with a simple explanation.</p>
+            <div class="slider" >
+                <div>
+                    <div class="expertise-item">
+                        <i class="far fa-file-code"></i>
+                        <h3>Clean Code</h3>
+                        <p>I write clean code that's good for SEO and for future updates.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="expertise-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>good experience with Frontend basics as HTML, CSS and JS.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="expertise-item">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>Responsive Design</h3>
+                        <p>build any website with responsive design to look good at all devices.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="expertise-item">
+                        <i class="fab fa-angular"></i>
+                        <h3>Single Page App</h3>
+                        <p>web app that interacts with the user by dynamically rewriting the content.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hire-me py-5">
+            <p>Have any project in mind!</p>
+            <h2>JUST SAY HELLO</h2>
+            <a href="#contact" class="main-btn mx-auto">Hire me</a>
+        </div>
+    </section>
+    <!------------------- end expertise area -------------------->
+
+    <!------------------- start portfolio -------------------->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">portfolio</h2>
+            <p class="section-p">find here my latest and featured works, happy watching </p>
+            <div class="works mb-5">
+                <div class="work work1">
+                    <a href="https://github.com/AsmaaZeyada/GYM-Website" target="_blank"></a>
+                    <div class="work-layout">
+                        <span>Template</span>
+                        <h4>gym</h4>
+                    </div>
+                </div>
+                <div class="work work2">
+                    <a href="https://github.com/AsmaaZeyada/movies-tv" target="_blank"></a>
+                    <div class="work-layout">
+                        <span>Application</span>
+                        <h4>Trending Shows</h4>
+                    </div>
+                </div>
+                <div class="work work3">
+                    <a href="https://github.com/AsmaaZeyada/responsive-website" target="_blank"></a>
+                    <div class="work-layout">
+                        <span>Application</span>
+                        <h4>Food</h4>
+                    </div>
+                </div>
+                <div class="work work4">
+                    <a href="https://github.com/AsmaaZeyada/travel" target="_blank"></a>
+                    <div class="work-layout">
+                        <span>Template</span>
+                        <h4>Travel</h4>
+                    </div>
+                </div>
+                <div class="work work5">
+                    <a href="https://github.com/AsmaaZeyada/FoodApp" target="_blank"></a>
+                    <div class="work-layout">
+                        <span> Application</span>
+                        <h4>Food order</h4>
+                    </div>
+                </div>
+                <div class="work work6">
+                    <a href="https://github.com/AsmaaZeyada/coffe-angular " target="_blank"></a>
+                    <div class="work-layout">
+                        <span>Application</span>
+                        <h4> Cafe</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume mt-5 pt-2">
+                <h2 class="section-title text-center">resume</h2>
+                <div class="resume-info">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 ">
+                            <div class="res res-edu">
+                                <h5><i class="fas fa-graduation-cap"></i> EDUCATION</h5>
+    
+                                <div class="res-item">
+                                    <span>2022 - 2023</span>
+                                    <h4>Web Development Diploma</h4>
+                                    <p>Web Development Diploma with frontend from<br> Route academy - Alex</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+    </section>
+    <!------------------- end portfolio -------------------->
+
+    <!------------------- start contact -------------------->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Contact</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact contact-info">
+                        <h4>
+                            Let's make something new, different, more meaningful, and awesome?<span> Just say hello!</span>
+                        </h4>
+                        <a href="tel:+201062442552"><i class="fas fa-phone-alt"></i>+2 01062442552</a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvrcjxnSNtkSDvcgcScgCtBpMQbhBJvpMkkLsDxJkQfQBqcBQqGtDDJzzlxMTCQBCHxLsB" target="_blank"><i class="fas fa-envelope"></i>bmaser38@gmail.com.com</a>
+                        <a href="https://www.google.com/maps/place/%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9%E2%80%AD/@31.197133,29.9205638,16z/data=!4m13!1m7!3m6!1s0x14f5c49126710fd3:0xb4e0cda629ee6bb9!2z2KfZhNil2LPZg9mG2K_YsdmK2Kk!3b1!8m2!3d31.2000924!4d29.9187387!3m4!1s0x14f5c49126710fd3:0xb4e0cda629ee6bb9!8m2!3d31.2000924!4d29.9187387" target="_blank"><i class="fas fa-map-marker-alt"></i>Alexandria, Egypt</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact contact-media">
+                        <h4>
+                            <span class="line d-md-none"></span>
+                            Contact Via Social Media
+                        </h4>
+                        <div class="media-accounts">
+                            <a href=" https://www.facebook.com/3smaa.zeyada.3" target="_blank" class="media">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href=" https://www.linkedin.com/  " target="_blank" class="media">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href=" https://github.com/AsmaaZeyada" target="_blank" class="media">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://instagram.com/3smaa_zeyada?utm_medium=copy_link " target="_blank" class="media">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href=" https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox " target="_blank" class="media">
+                                <i class="fab fa-google"></i>
+                                <span>Gmail</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------- end contact -------------------->
+
+    <!------------------- start footer -------------------->
+    <footer>
+        <div class="container">
+            <div class="footer-content py-4 d-flex justify-content-between align-items-center">
+                <span>All Rights reserved ©2022</span>
+                <span>created by <a href="https://www.facebook.com/3smaa.zeyada.3 " target="_blank">Asmaa Zeyada</a></span>
+            </div>
+        </div>
+    </footer>
+    <!------------------- end footer -------------------->
+
+
+    <!-- jquery script -->
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <!-- slick slider script -->
+    <script src="JS/slick.min.js"></script>
+    <!-- popper.js script -->
+    <script src="JS/popper.min.js"></script>
+    <!-- bootstrap script -->
+    <script src="JS/bootstrap.min.js"></script>
+    <!-- typedjs script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- custom script -->
+    <script src="JS/script.js"></script>
+</body>
+</html>

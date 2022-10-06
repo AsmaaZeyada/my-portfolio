@@ -1,0 +1,75 @@
+@import "./classes";
+@import "./variables";
+//! ------------------- Start expertise area Style -------------------
+#expertiseArea
+{
+    // background-color: teal;
+    overflow-x: hidden;
+    .slider
+    {
+        // background-color: rgba($color: tomato, $alpha: 0.5);
+        .expertise-item
+        {
+            background-color: $secBg;
+            text-align: center;
+            color: white;
+            padding: 40px 30px;
+            border-radius: 5px;
+            cursor: grab;
+            i
+            {
+                color: $mainColor;
+                font-size: 40px;
+                margin-bottom: 18px;
+            }
+            p
+            {
+                width: 90%;
+                margin: 12px auto 0;
+            }
+        }
+        .slick-slide 
+        {
+            margin: 0 10px;
+        }
+        .slick-list
+        {
+            margin: 0 -10px;
+        }
+        .slick-dots
+        {
+            margin: 18px ;
+            position: relative;
+            bottom: 0;
+            li
+            {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $mainColor;
+                transition: 0.2s;
+            }
+            .slick-active
+            {
+                width: 25px;
+                border-radius: 30px;
+            }
+        }
+    }
+    .hire-me
+    {
+        background-color: $secBg;
+        text-align: center;
+        p
+        {
+            color: white;
+            margin-bottom: 16px;
+        }
+        h2
+        {
+            color: $mainColor;
+            margin: 16px 0;
+        }
+    }
+}
+//! ------------------- end expertise area Style -------------------

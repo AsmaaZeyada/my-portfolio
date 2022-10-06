@@ -1,0 +1,22 @@
+
+@import "./variables";
+@import "./loading-screen";
+@import "./navbar";
+@import "./home";
+@import "./about";
+@import "./expertise-area";
+@import "./portfolio";
+@import "./contact";
+@import "./footer";
+
+
+body
+{
+    background-color: $mainBg ;
+    font: {
+        family: $fontPoppins !important;
+    };
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+

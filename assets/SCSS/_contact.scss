@@ -1,0 +1,105 @@
+@import "./classes";
+@import "./variables";
+//! ------------------- Start Contact Style -------------------
+#contact
+{
+    .contact
+    {
+        margin-bottom: 20px;
+        h4
+        {
+            font-weight: 600;
+            color: white;
+            margin-bottom: 24px;
+            span
+            {
+                -webkit-text-stroke-color:$mainColor;
+                -webkit-text-stroke-width: 1px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: transparent;
+                transition: 0.2s;
+                &:hover
+                {
+                    color: $mainColor;
+                }
+                &::selection{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .contact-info
+    {
+        padding: 5px 0;
+        a
+        {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 17px;
+            display: block;
+            text-decoration: none;
+            transition: 0.2s;
+            i
+            {
+                color: $mainColor;
+                margin-right: 12px;
+                font-size: 20px;
+            }
+            &:hover
+            {
+                color: $mainColor;
+            }
+        }
+    }
+    .contact-media
+    {
+        .media-accounts
+        {
+            padding: 10px 0;
+            width: fit-content;
+            max-width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            .media
+            {
+                width: 65px;
+                height: 65px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                border-radius: 50%;
+                border: 2px solid $mainColor;
+                transition: 0.5s;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                i
+                {
+                    color: $mainColor;
+                    font-size: 28px;
+                }
+                span
+                {
+                    position: absolute;
+                    bottom: 110%;
+                    color: $mainColor;
+                    display: block;
+                    visibility: hidden;
+                }
+                &:hover
+                {
+                    background-color: white;
+                    span
+                    {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+//! ------------------- End Contact Style -------------------

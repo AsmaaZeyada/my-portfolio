@@ -1,0 +1,121 @@
+@import "./classes";
+@import "./variables";
+//! ------------------- Start Navbar Style -------------------
+.navbar
+{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    padding: 24px 0 18px 0 !important;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    .navbar-brand
+    {
+        img
+        {
+            width: 30%;
+        }
+    }
+    .navbar-toggler
+    {
+        border: none !important;
+        outline: none;
+        box-shadow: none !important;
+
+        i
+        {
+            font-size: 35px;
+            color: white;
+            transition: 0.5s;
+        }
+    }
+    .navbar-collapse
+    {
+        .navbar-nav
+        {
+            margin-left: auto;
+            .nav-item
+            {
+                margin-left: 16px;
+                padding: 0 12px;
+
+                .nav-link
+                {
+                    color: white;
+                    transition: color .2s;
+                    font: {
+                        size: 17px !important;
+                        weight: 400;
+                    };
+                    padding: 0 !important;
+                    line-height: 28px;
+                    position: relative;
+                    width: fit-content;
+                    &.active,&:hover
+                    {
+                        color: $mainColor;
+                        &::after
+                        {
+                            width: 100%;
+                        }
+
+                    }
+                    &::after
+                    {
+                        content: "";
+                        width: 0%;
+                        height: 1px;
+                        background-color: $mainColor;
+                        position: absolute;
+                        bottom: -3px;
+                        left: 0px;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-collapse.show , .navbar-collapse.collapsing
+    {
+        background-color: $mainBg;
+    }
+}
+.navbar-sticky
+{
+    padding: 5px 0 1px !important;
+    border-bottom: 0.5px solid $secBg;
+    transition: 0.5s;
+    background-color: $mainBg;
+}
+//! ------------------- End Navbar Style -------------------
+
+
+//? ------------------- Start Navbar Responsive -------------------
+@media screen and  (max-width: 991px) {
+    .navbar-collapse
+    {
+        padding: 10px 0;
+        .navbar-nav
+        {
+
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+    .nav-item
+    {
+        margin-bottom: 16px;
+
+    }
+}
+@media screen and  (max-width: 767px){
+    nav
+    {
+        padding: 16px 0 9px 0 !important;
+    }
+}
+
+//? ------------------- End Navbar Responsive -------------------

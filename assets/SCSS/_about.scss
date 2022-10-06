@@ -1,0 +1,124 @@
+@import "./classes";
+@import "./variables";
+//! ------------------- Start about Style -------------------
+#about
+{
+    .about-content
+    {
+        .about-information
+        {
+            padding-top: 48px;
+            margin-top: 32px;
+            p
+            {
+                color: white;
+                line-height: 1.8;
+                margin: 5px 0 20px 0;
+                width: 90%;
+            }
+            .signature
+            {
+                color: $mainColor;
+                font: {
+                    family: $fontSignature;
+                    size: 50px;
+                };
+                margin: 50px 0;
+            }
+        }
+    }
+    .about-skills
+    {
+        padding: 65px 0 40px;
+        #skills
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .skill
+            {
+                width: 50%;
+                margin-bottom: 18px;
+                padding:8px;
+                flex-grow: 1;
+                .skill-info
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1px 0;
+                    margin-bottom: 6px;
+                    span
+                    {
+                        color: white;
+                        font-size: 15px;
+                        i
+                        {
+                            color: $mainColor;
+                            margin-left: 5px;
+                            
+                        }
+                    }
+                }
+                .skill-progressbar
+                {
+                    background-color: rgba($color: white, $alpha: 0.9);
+                    width: 100%;
+                    height: 8px;
+                    border-radius: 30px;
+                    overflow: hidden;
+                    .percentage
+                    {
+                        height: 100%;
+                        background-color: $mainColor;
+                        width: 0%;
+                        transition: 1s;
+                    }
+                    // .percentage.HTML
+                    // {
+                    //     width: 90%;
+                    // }
+                    // .percentage.CSS
+                    // {
+                    //     width: 85%;
+                    // }
+                    // .percentage.SCSS
+                    // {
+                    //     width: 75%;
+                    // }
+                    // .percentage.BS
+                    // {
+                    //     width: 95%;
+                    // }
+                    // .percentage.JS
+                    // {
+                    //     width: 70%;
+                    // }
+                    // .percentage.NG
+                    // {
+                    //     width: 65%;
+                    // }
+                    
+                }
+            }
+        }
+    }
+}
+//! ------------------- End about Style -------------------
+
+//? ------------------- Start about Responsive -------------------
+@media screen and (max-width: 991px) {
+    .about-skills
+    {
+        #skills
+        {
+            .skill
+            {
+                width: 100% !important;
+            }
+        }
+    }
+
+}
+//? ------------------- End about Responsive -------------------
